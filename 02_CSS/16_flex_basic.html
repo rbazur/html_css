@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Basic and Style</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .item {
+        background: #f4f4f4;
+        border: #ccc solid 2px;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        width: 200px;
+        /* flex-grow: 2; */
+        /* flex: 1; */
+        flex: 1 0 200px;
+      }
+
+      .flex-container {
+        display: flex;
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse; */
+      }
+
+      .item-1 {
+        flex-shrink: 0;
+      }
+
+      .item-2 {
+        flex-grow: 1;
+        flex-basis: 0;
+      }
+
+      .item-3 {
+        flex-grow: 2;
+        flex-basis: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <!-- .item{<h3>Item $</h3>}*3 -->
+      <div class="item item-1">
+        <h3>Item 1</h3>
+      </div>
+      <div class="item item-2">
+        <h3>Item 2</h3>
+      </div>
+      <div class="item item-3">
+        <h3>Item 3</h3>
+      </div>
+    </div>
+  </body>
+</html>

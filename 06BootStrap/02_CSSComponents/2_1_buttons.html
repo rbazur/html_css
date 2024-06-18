@@ -18,19 +18,19 @@
     <div class="container">
       <!--################START HERE################-->
 
-      <!-- Bootstrap includes several predefiBootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control. -->
+      <!-- Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control. -->
       <!-- BUTTONS -->
       <h2 class="mt-5">Button Styles</h2>
-      <button>Basic</button>
-      <button>Primary</button>
-      <button>Secondary</button>
-      <button>Success</button>
-      <button>Info</button>
-      <button>Warning</button>
-      <button>Danger</button>
-      <button>Dark</button>
-      <button>Light</button>
-      <button>Link</button>      
+      <button type="button" class="btn">Basic</button>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-dark">Dark</button>
+      <button type="button" class="btn btn-light">Light</button>
+      <button type="button" class="btn btn-link">Link</button>      
 
       <br>
       <br><br>
@@ -39,9 +39,14 @@
       <!-- BUTTON TAGS/TYPES -->
 
       <h2>Button Elements</h2>
-      <a href="#">Link Button</a>
-      <button>Button</button>
-      
+      <a href="#" class="btn btn-success">Link Button</a>
+      <button type="button" class="btn btn-success">Button</button>
+
+      <input type="button" class="btn btn-success" value="Input button">
+      <input type="submit" value="Submit Button" class="btn btn-success">
+      <input type="reset" value="Reset Button" class="btn btn-success">
+
+
       <br>
       <br>
       <br>
@@ -49,14 +54,14 @@
 
       <!-- OUTLINE BUTTONS -->
       <h2>Button Outline</h2>
-  <button>Primary</button>
-  <button>Secondary</button>
-  <button>Success</button>
-  <button>Info</button>
-  <button>Warning</button>
-  <button>Danger</button>
-  <button>Dark</button>
-  <button>Light</button>
+  <button type="button" class="btn btn-outline-primary">Primary</button>
+  <button type="button" class="btn btn-outline-secondary">Secondary</button>
+  <button type="button" class="btn btn-outline-success">Success</button>
+  <button type="button" class="btn btn-outline-info">Info</button>
+  <button type="button" class="btn btn-outline-warning">Warning</button>
+  <button type="button" class="btn btn-outline-danger">Danger</button>
+  <button type="button" class="btn btn-outline-dark">Dark</button>
+  <button type="button" class="btn btn-outline-light">Light</button>
 
       <br>
       <br>
@@ -65,9 +70,9 @@
 
       <!-- BUTTON SIZES -->
       <h2>Button Sizes</h2>
-  <button><i class="fas fa-user"></i> Large</button>
-  <button>Default</button>    
-  <button>Small</button>
+  <button type="button" class="btn btn-primary btn-lg"><i class="fas fa-user"></i> Large</button>
+  <button type="button" class="btn btn-primary btn-md">Default</button>    
+  <button type="button" class="btn btn-primary btn-sm">Small</button>
       
   <h2 class="mt-3">Block Level Buttons</h2>
   <p>To create a block level button that spans the entire width of the parent element, use the .d-grid "helper" class on the parent element:</p>
@@ -80,9 +85,9 @@
 
       <!-- STATES -->
       <h2>Button States</h2>
-  <button>Primary Button</button>
-  <button>Active Primary</button>
-  <button>Disabled Primary</button>
+  <button type="button" class="btn btn-primary">Primary Button</button>
+  <button type="button" class="btn btn-primary active">Active Primary</button>
+  <button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
   <a>Disabled Link</a>
 
       <br>

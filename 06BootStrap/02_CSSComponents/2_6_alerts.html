@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <h2>Alerts</h2>
+      <p>
+        Alerts are created with the .alert class, followed by a contextual color
+        classes:
+      </p>
+      <div class="alert alert-success">
+        <strong>Success!</strong> This alert box could indicate a successful or
+        positive action.
+        <!-- <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>. -->
+      </div>
+
+      <div class="alert alert-info">
+        <strong>Info!</strong> This alert box could indicate a neutral
+        informative change or action.
+      </div>
+      <div class="alert alert-warning">
+        <strong>Warning!</strong> This alert box could indicate a warning that
+        might need attention.
+      </div>
+      <div class="alert alert-danger">
+        <strong>Danger!</strong> This alert box could indicate a dangerous or
+        potentially negative action.
+      </div>
+      <div class="alert alert-primary">
+        <strong>Primary!</strong> Indicates an important action.
+      </div>
+      <div class="alert alert-secondary">
+        <strong>Secondary!</strong> Indicates a slightly less important action.
+      </div>
+      <div class="alert alert-dark">
+        <strong>Dark!</strong> Dark grey alert.
+      </div>
+      <div class="alert alert-light">
+        <strong>Light!</strong> Light grey alert.
+      </div>
+
+      <!-- Dismissible Alerts -->
+      <h2>Alerts</h2>
+      <p>
+        The button with class="btn-close" and data-bs-dismiss="alert" is used to
+        close the alert box.
+      </p>
+      <p>The alert-dismissible class aligns the button to the right.</p>
+      <div class="alert alert-success alert-dismissible">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
+        <strong>Success!</strong> This alert box could indicate a successful or
+        positive action.
+      </div>
+      <div class="alert alert-info alert-dismissible">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
+        <strong>Info!</strong> This alert box could indicate a neutral
+        informative change or action.
+      </div>
+      <div class="alert alert-warning alert-dismissible">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
+        <strong>Warning!</strong> This alert box could indicate a warning that
+        might need attention.
+      </div>
+      <div class="alert alert-danger alert-dismissible">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
+        <strong>Danger!</strong> This alert box could indicate a dangerous or
+        potentially negative action.
+      </div>
+      <div class="alert alert-primary alert-dismissible">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
+        <strong>Primary!</strong> Indicates an important action.
+      </div>
+      <div class="alert alert-secondary alert-dismissible">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
+        <strong>Secondary!</strong> Indicates a slightly less important action.
+      </div>
+      <div class="alert alert-dark alert-dismissible">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
+        <strong>Dark!</strong> Dark grey alert.
+      </div>
+      <div class="alert alert-light alert-dismissible">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
+        <strong>Light!</strong> Light grey alert.
+      </div>
+
+      <!-- Basic Progress Bar -->
+      <div class="container mt-3">
+        <h2>Basic Progress Bar</h2>
+        <p>
+          To create a default progress bar, add a .progress class to a container
+          element and add the progress-bar class to its child element. Use the
+          CSS width property to set the width of the progress bar:
+        </p>
+        <div class="progress">
+          <div class="progress-bar" style="width: 70%"></div>
+        </div>
+      </div>
+
+      <!-- Progress bar Height -->
+      <div class="container mt-3">
+        <h2>Progress Bar Height</h2>
+        <p>
+          The height of the progress bar is 1rem (16px) by default. Use the CSS
+          height property to change the height:
+        </p>
+        <div class="progress" style="height: 10px">
+          <div class="progress-bar" style="width: 40%; height: 10px"></div>
+        </div>
+        <br />
+        <div class="progress" style="height: 20px">
+          <div class="progress-bar" style="width: 50%; height: 20px"></div>
+        </div>
+        <br />
+        <div class="progress" style="height: 30px">
+          <div class="progress-bar" style="width: 60%; height: 30px"></div>
+        </div>
+      </div>
+
+      <!-- Progress With Labels -->
+      <div class="container mt-3">
+        <h2>Progress Bar With Label</h2>
+        <div class="progress">
+          <div class="progress-bar" style="width: 70%">70%</div>
+        </div>
+      </div>
+
+      <!-- Colored Progress Bars -->
+      <div class="container mt-3">
+        <h2>Colored Progress Bars</h2>
+        <p>
+          Use any of the contextual color classes to change the color of the
+          progress bar:
+        </p>
+        <!-- Blue -->
+        <div class="progress">
+          <div class="progress-bar" style="width: 10%"></div>
+        </div>
+        <br />
+
+        <!-- Green -->
+        <div class="progress">
+          <div class="progress-bar bg-success" style="width: 20%"></div>
+        </div>
+        <br />
+
+        <!-- Turquoise -->
+        <div class="progress">
+          <div class="progress-bar bg-info" style="width: 30%"></div>
+        </div>
+        <br />
+
+        <!-- Orange -->
+        <div class="progress">
+          <div class="progress-bar bg-warning" style="width: 40%"></div>
+        </div>
+        <br />
+
+        <!-- Red -->
+        <div class="progress">
+          <div class="progress-bar bg-danger" style="width: 50%"></div>
+        </div>
+        <br />
+
+        <!-- White -->
+        <div class="progress border">
+          <div class="progress-bar bg-white" style="width: 60%"></div>
+        </div>
+        <br />
+
+        <!-- Grey -->
+        <div class="progress">
+          <div class="progress-bar bg-secondary" style="width: 70%"></div>
+        </div>
+        <br />
+
+        <!-- Light Grey -->
+        <div class="progress border">
+          <div class="progress-bar bg-light" style="width: 80%"></div>
+        </div>
+        <br />
+
+        <!-- Dark Grey -->
+        <div class="progress">
+          <div class="progress-bar bg-dark" style="width: 90%"></div>
+        </div>
+      </div>
+
+      <!-- Striped Progress bars -->
+      <div class="container mt-3">
+        <h2>Striped Progress Bars</h2>
+        <p>
+          The .progress-bar-striped class adds stripes to the progress bars:
+        </p>
+        <div class="progress">
+          <div
+            class="progress-bar progress-bar-striped"
+            style="width: 30%"
+          ></div>
+        </div>
+        <br />
+        <div class="progress">
+          <div
+            class="progress-bar bg-success progress-bar-striped"
+            style="width: 40%"
+          ></div>
+        </div>
+        <br />
+        <div class="progress">
+          <div
+            class="progress-bar bg-info progress-bar-striped"
+            style="width: 50%"
+          ></div>
+        </div>
+        <br />
+        <div class="progress">
+          <div
+            class="progress-bar bg-warning progress-bar-striped"
+            style="width: 60%"
+          ></div>
+        </div>
+        <br />
+        <div class="progress">
+          <div
+            class="progress-bar bg-danger progress-bar-striped"
+            style="width: 70%"
+          ></div>
+        </div>
+      </div>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
+  </body>
+</html>

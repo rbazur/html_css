@@ -21,15 +21,15 @@
   <body>
     <div class="container">
       <!-- ALIGNMENT -->
-      <p>
+      <p class="text-start">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
         ipsam!
       </p>
-      <p>
+      <p class="text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
         ipsam!
       </p>
-      <p>
+      <p class="text-end">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
         ipsam!
       </p>
@@ -37,35 +37,45 @@
       <br /><br />
 
       <!-- Responsive Alignment -->
-      <p>Start aligned on Viewport sized SM (small) or wider</p>
-      <p>Start aligned on Viewport sized MD (medium) or wider</p>
-      <p>Start aligned on Viewport sized LG (large) or wider</p>
-      <p>Start aligned on Viewport sized XL (extra-large) or wider</p>
+      <p class="text-sm-end">
+        Start aligned on Viewport sized SM (small) or wider
+      </p>
+      <p class="text-md-center text-sm-end">
+        Start aligned on Viewport sized MD (medium) or wider
+      </p>
+      <p class="text-lg-center text-md-end text-sm-end">
+        Start aligned on Viewport sized LG (large) or wider
+      </p>
+      <p class="text-xl-start text-lg-center text-md-end text-sm-end">
+        Start aligned on Viewport sized XL (extra-large) or wider
+      </p>
 
       <!-- Text Wrapping -->
-      <div>This text should be wrap</div>
+      <div class="badge bg-primary text-wrap">This text should be wrap</div>
 
       <!-- Font Size -->
-      <p>Font Size 1</p>
-      <p>Font Size 2</p>
-      <p>Font Size 3</p>
-      <p>Font Size 4</p>
-      <p>Font Size 5</p>
-      <p>Font Size 6</p>
+      <p class="fs-1">Font Size 1</p>
+      <p class="fs-2">Font Size 2</p>
+      <p class="fs-3">Font Size 3</p>
+      <p class="fs-4">Font Size 4</p>
+      <p class="fs-5">Font Size 5</p>
+      <p class="fs-6">Font Size 6</p>
 
       <!-- Block papunta sa inline -->
-      <h1>Hello</h1>
-      <h1>Goodbye</h1>
+      <h1 class="d-inline bg-success">Hello</h1>
+      <h1 class="d-inline bg-success">Love</h1>
+      <h1 class="d-inline bg-success">Goodbye</h1>
       <br />
+      <p></p>
       <!-- inline to block -->
-      <span> Block </span>
+      <span class="d-block bg-primary"> Block </span>
       <br />
       <!-- Inline Block -->
-      <div>
+      <div class="d-inline-block bg-warning text-center">
         <h3>Hello</h3>
         This is inline
       </div>
-      <div>
+      <div class="d-inline-block bg-warning text-center">
         <h3>Hello</h3>
         This is inline
       </div>

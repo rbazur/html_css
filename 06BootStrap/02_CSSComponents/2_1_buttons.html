@@ -93,13 +93,12 @@
       <br>
       <br>
 
-      <!-- BUTTON GROUPS -->
       <h2>Button Group</h2>
       <p>The .btn-group class creates a button group:</p>
       <div class="btn-group">
-        <button>Apple</button>
-        <button>Samsung</button>
-        <button>Sony</button>
+        <button type="button" class="btn btn-primary">Apple</button>
+        <button type="button" class="btn btn-primary">Samsung</button>
+        <button type="button" class="btn btn-primary">Sony</button>
       </div>
 
       <br></br>
@@ -107,10 +106,10 @@
       <h2>Button Groups Sizes</h2>
       <p>Add class .btn-group-* to size all buttons in a button group.</p>
       <h3>Large Buttons:</h3>
-      <div>
-        <button>Apple</button>
-        <button>Samsung</button>
-        <button>Sony</button>
+      <div class="btn-group btn-group-lg">
+        <button type="button" class="btn btn-primary">Apple</button>
+        <button type="button" class="btn btn-primary">Samsung</button>
+        <button type="button" class="btn btn-primary">Sony</button>
       </div>
 
       <br><br>
@@ -120,9 +119,9 @@
       <h2>Vertical Button Group</h2>
   <p>Use the .btn-group-vertical class to create a vertical button group:</p>
   <div class="btn-group-vertical">
-    <button>Apple</button>
-    <button>Samsung</button>
-    <button>Sony</button>
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <button type="button" class="btn btn-primary">Sony</button>
   </div>
       <br></br>
 
@@ -135,16 +134,16 @@
   <p>The form below contains three checkboxes. The first option is checked by default, and the last option is disabled:</p>
   <form action="/action_page.php">
     <div class="form-check">
-      <input>
-      <label>Option 1</label>
+      <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+      <label class="form-check-label">Option 1</label>
     </div>
     <div class="form-check">
-      <input>
-      <label>Option 2</label>
+      <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+      <label  class="form-check-label">Option 2</label>
     </div>
     <div class="form-check">
-      <input>
-      <label>Option 3</label>
+      <input type="checkbox" class="form-check-input" id="check3" name="option3" value="something" disabled>
+      <label  class="form-check-label">Option 3</label>
     </div>
     <button>Submit</button>
   </form>
@@ -152,14 +151,14 @@
   <br><br>
   <p>You can also implement checkboxes using .btn-check class</p>
         <div>
-        <input>
-        <label>Checkbox 1</label>
+        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" >
+        <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
       
-        <input>
-        <label>Checkbox 2</label>
+        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
       
-        <input>
-        <label>Checkbox 3</label>
+        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
       </div>
 
       <br><br><br>
@@ -169,30 +168,30 @@
   <p>The form below contains three radio buttons. The first option is checked by default, and the last option is disabled:</p>
   <form action="/action_page.php">
     <div class="form-check">
-      <input>
-      <label>Option 1</label>
+      <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">
+      <label class="form-check-label" for="radio1">Option 1</label>
     </div>
     <div>
-      <input>
-      <label>Option 2</label>
+      <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+      <label  class="form-check-label" for="radio2">Option 2</label>
     </div>
     <div>
-      <input>
-      <label>Option 3</label>
+      <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">
+      <label  class="form-check-label" for="radio3">Option 3</label>
     </div>
     <button>Submit</button>
   </form>
   <br><br>
 
-      <div>
-        <input>
-        <label>Radio 1</label>
+      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" id="btnradio1" name="btnradio" value="option1">
+        <label class="btn btn-outline-primary" for="btnradio1" aria-autocomplete="off">Radio 1</label>
       
-        <input>
-        <label>Radio 2</label>
+        <input type="radio" class="btn-check" id="btnradio2" name="btnradio" value="option2">
+        <label  class="btn btn-outline-primary" for="btnradio2" aria-autocomplete="off">Radio 2</label>
       
-        <input>
-        <label>Radio 3</label>
+        <input type="radio" class="btn-check" id="btnradio3" name="btnradio" value="option3">
+        <label  class="btn btn-outline-primary" for="btnradio3" aria-autocomplete="off">Radio 3</label>
       </div>
       <br><br><br><br>
 
@@ -201,10 +200,10 @@
   <p>Try to submit the form with and without toggling the switch.</p>
   <form action="/action_page.php">
     <div class="form-check form-switch">
-      <input>
-      <label>Dark Mode</label>
+      <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes">
+      <label class="form-check-label" for="mySwitch">Dark Mode</label>
     </div>
-    <button>Submit</button>
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
   </form>
 
 
@@ -216,15 +215,15 @@
       <h2 class="mt-3">Dropdowns</h2>
       <p>The .dropdown class is used to indicate a dropdown menu.</p>
       <p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
-      <p>To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and data-toggle="dropdown".</p>                                          
-      <div>
-        <button>
+      <p>To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and data-bs-toggle="dropdown".</p>                                          
+      <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
           Dropdown button
         </button>
         <ul class="dropdown-menu">
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
+          <li><a class="dropdown-item" href="#">Link 1</a></li>
+          <li><a class="dropdown-item" href="#">Link 2</a></li>
+          <li><a class="dropdown-item" href="#">Link 3</a></li>
         </ul>
       </div>
       <br>
@@ -233,33 +232,33 @@
       <h2>Dropdowns</h2>
   <p>The .dropdown-divider class is used to separate links inside the dropdown menu with a thin horizontal line:</p>
 
-  <div>
-    <button>
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
       Dropdown button
     </button>
-    <ul>
-      <li><a href="#">Link 1</a></li>
-      <li><a href="#">Link 2</a></li>
-      <li><a href="#">Link 3</a></li>
-      <li><hr></li>
-      <li><a href="#">Another link</a></li>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Link 1</a></li>
+      <li><a class="dropdown-item" href="#">Link 2</a></li>
+      <li><a class="dropdown-item" href="#">Link 3</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Another link</a></li>
     </ul>
   </div>
 
   <h2>Dropdowns</h2>
   <p>The .dropdown-header class is used to add headers inside the dropdown menu:</p>
 
-  <div>
-    <button>
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
       Dropdown button
     </button>
-    <ul>
-      <li><h5>Dropdown header 1</h5></li>
-      <li><a href="#">Link 1</a></li>
-      <li><a href="#">Link 2</a></li>
-      <li><a href="#">Link 3</a></li>
-      <li><h5>Dropdown header 2</h5></li>
-      <li><a href="#">Another link</a></li>
+    <ul class="dropdown-menu">
+      <li><h5 class="dropdown-header">Dropdown header 1</h5></li>
+      <li><a class="dropdown-item" href="#">Link 1</a></li>
+      <li><a class="dropdown-item" href="#">Link 2</a></li>
+      <li><a class="dropdown-item" href="#">Link 3</a></li>
+      <li><h5 class="dropdown-header">Dropdown header 2</h5></li>
+      <li><a class="dropdown-item" href="#">Another link</a></li>
     </ul>
   </div>
 
@@ -267,27 +266,27 @@
   <p>Add the .dropend class next to the dropdown menu to right-align the dropdown. Note that the caret/arrows is added automatically:</p>
 
   <div class="dropdown dropend">
-    <button>
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
       Dropend
     </button>
-    <ul>
-      <li><a href="#">Normal</a></li>
-      <li><a href="#">Active</a></li>
-      <li><a href="#">Disabled</a></li>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Normal</a></li>
+      <li><a class="dropdown-item active" href="#">Active</a></li>
+      <li><a class="dropdown-item disabled" href="#">Disabled</a></li>
     </ul>
   </div>
 
   <br><h2>Dropdown Position - Dropleft</h2>
   <p>Add the .dropstart class next to the dropdown menu to left-align the dropdown. Note that the caret/arrow is added automatically. Also note that we float the dropdown to the right:</p>
 
-  <div>
-    <button>
+  <div class="dropdown dropstart text-end">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
       Dropstart
     </button>
-    <ul>
-      <li><a href="#">Normal</a></li>
-      <li><a href="#">Active</a></li>
-      <li><a href="#">Disabled</a></li>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Normal</a></li>
+      <li><a class="dropdown-item " href="#">Active</a></li>
+      <li><a class="dropdown-item " href="#">Disabled</a></li>
     </ul>
   </div>
   
@@ -295,35 +294,44 @@
   <h2>Dropdowns - Dropdown Text </h2>
   <p>The .dropdown-item-text class is used to add plain text to a dropdown, or used on links for default link styling.</p>                                        
 
-  <div>
-    <button>
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
       Dropdown button
     </button>
-    <ul>
-      <li><a href="#">Link 1</a></li>
-      <li><a href="#">Link 2</a></li>
-      <li><a href="#">Link 3</a></li>
-      <li><a href="#">Text Link</a></li>
-      <li><span>Just Text</span></li>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Link 1</a></li>
+      <li><a class="dropdown-item" href="#">Link 2</a></li>
+      <li><a class="dropdown-item" href="#">Link 3</a></li>
+      <li><a class="dropdown-item" href="#">Text Link</a></li>
+      <li><span class="dropdown-item-text">Just Text</span></li>
     </ul>
   </div>
 
   <h2>Nesting Button Groups</h2>
 <h3>Grouped Buttons with a Dropdown</h3>
   <p>Nest button groups to create dropdown menus:</p>
-  <div>
-    <button>Apple</button>
-    <button>Samsung</button>
-    <div>
-      <button>Sony</button>
-      <ul>
-        <li><a href="#">Tablet</a></li>
-        <li><a href="#">Smartphone</a></li>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Sony</button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Tablet</a></li>
+        <li><a class="dropdown-item" href="#">Smartphone</a></li>
       </ul>
     </div>
   </div>
 
-
+<p>Lorem.</p>
+<p>Lorem.</p>
+<p>Lorem.</p>
+<p>Lorem.</p>
+<p>Lorem.</p>
+<p>Lorem.</p>
+<p>Lorem.</p>
+<p>Lorem.</p>
+<p>Lorem.</p>
+<p>Lorem.</p>
      
   </div>
   <!-- ./container -->
